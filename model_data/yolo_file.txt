@@ -1,0 +1,38 @@
+../drive/MyDrive/images_v2/1_r.jpg 0,100,245,200,0 0,270,179,377,0 0,386,145,413,0 283,386,412,415,0 
+../drive/MyDrive/images_v2/2_r.jpg 0,364,416,416,0 
+../drive/MyDrive/images_v2/3_r.jpg 140,5,412,146,0 
+../drive/MyDrive/images_v2/4_r.jpg 114,99,293,205,0 136,287,285,374,0 
+../drive/MyDrive/images_v2/5_r.jpg 0,0,140,70,0 
+../drive/MyDrive/images_v2/6_r.jpg 0,152,290,416,0 
+../drive/MyDrive/images_v2/7_r.jpg 0,161,265,416,0 
+../drive/MyDrive/images_v2/8_r.jpg 249,22,416,160,0 
+../drive/MyDrive/images_v2/9_r.jpg 1,0,416,112,0 
+../drive/MyDrive/images_v2/10_r.jpg 13,0,275,91,0 
+../drive/MyDrive/images_v2/11_r.jpg 177,91,310,154,0 216,161,416,209,0 0,225,153,314,0 161,233,407,289,0 209,298,378,344,0 209,363,389,406,0 
+../drive/MyDrive/images_v2/12_r.jpg 0,3,238,90,0 14,140,193,224,0 
+../drive/MyDrive/images_v2/13_r.jpg 13,133,227,207,0 
+../drive/MyDrive/images_v2/14_r.jpg 45,333,352,416,0 
+../drive/MyDrive/images_v2/15_r.jpg 0,255,416,414,0 
+../drive/MyDrive/images_v2/16_r.jpg 0,0,416,84,0 
+../drive/MyDrive/images_v2/17_r.jpg 167,143,258,261,0 
+../drive/MyDrive/images_v2/18_r.jpg 24,283,398,385,0 116,393,331,413,0 
+../drive/MyDrive/images_v2/19_r.jpg 0,23,215,215,0 
+../drive/MyDrive/images_v2/20_r.jpg 0,300,416,416,0 
+../drive/MyDrive/images_v2/21_r.jpg 95,309,347,416,0 
+../drive/MyDrive/images_v2/22_r.jpg 206,0,416,117,0 206,221,303,326,0 
+../drive/MyDrive/images_v2/23_r.jpg 0,0,343,416,0 
+../drive/MyDrive/images_v2/24_r.jpg 110,71,207,86,0 116,214,245,226,0 0,274,399,361,0 
+../drive/MyDrive/images_v2/25_r.jpg 48,18,183,37,0 
+../drive/MyDrive/images_v2/26_r.jpg 38,187,388,232,0 79,253,330,305,0 
+../drive/MyDrive/images_v2/27_r.jpg 0,0,391,113,0 
+../drive/MyDrive/images_v2/28_r.jpg 0,285,416,416,0 
+../drive/MyDrive/images_v2/29_r.jpg 14,18,389,134,0 134,286,289,319,0 
+../drive/MyDrive/images_v2/30_r.jpg 4,228,404,307,0 
+../drive/MyDrive/images_v2/31_r.jpg 297,0,416,119,0 45,326,371,416,0 
+../drive/MyDrive/images_v2/32_r.jpg 200,27,341,160,0 366,259,416,355,0 
+../drive/MyDrive/images_v2/33_r.jpg 0,0,409,114,0 
+../drive/MyDrive/images_v2/34_r.jpg 0,116,316,199,0 1,212,377,237,0 80,334,400,379,0 
+../drive/MyDrive/images_v2/35_r.jpg 0,0,168,131,0 87,300,339,416,0 
+../drive/MyDrive/images_v2/36_r.jpg 24,291,210,312,0 
+../drive/MyDrive/images_v2/37_r.jpg 135,245,284,344,0 138,347,281,405,0 
+../drive/MyDrive/images_v2/38_r.jpg 98,243,315,409,0 

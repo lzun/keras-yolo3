@@ -1,0 +1,94 @@
+../drive/MyDrive/images_v2/1_r.jpg 0,100,245,200,0 0,270,179,377,0 0,386,145,413,0 283,386,412,415,0 
+../drive/MyDrive/images_v2/2_r.jpg 0,364,416,416,0 
+../drive/MyDrive/images_v2/3_r.jpg 140,5,412,146,0 
+../drive/MyDrive/images_v2/4_r.jpg 114,99,293,205,0 136,287,285,374,0 
+../drive/MyDrive/images_v2/5_r.jpg 0,0,140,70,0 
+../drive/MyDrive/images_v2/6_r.jpg 0,152,290,416,0 
+../drive/MyDrive/images_v2/7_r.jpg 0,161,265,416,0 
+../drive/MyDrive/images_v2/8_r.jpg 249,22,416,160,0 
+../drive/MyDrive/images_v2/9_r.jpg 1,0,416,112,0 
+../drive/MyDrive/images_v2/10_r.jpg 13,0,275,91,0 
+../drive/MyDrive/images_v2/11_r.jpg 177,91,310,154,0 216,161,416,209,0 0,225,153,314,0 161,233,407,289,0 209,298,378,344,0 209,363,389,406,0 
+../drive/MyDrive/images_v2/12_r.jpg 0,3,238,90,0 14,140,193,224,0 
+../drive/MyDrive/images_v2/13_r.jpg 13,133,227,207,0 
+../drive/MyDrive/images_v2/14_r.jpg 45,333,352,416,0 
+../drive/MyDrive/images_v2/15_r.jpg 0,255,416,414,0 
+../drive/MyDrive/images_v2/16_r.jpg 0,0,416,84,0 
+../drive/MyDrive/images_v2/17_r.jpg 167,143,258,261,0 
+../drive/MyDrive/images_v2/18_r.jpg 24,283,398,385,0 116,393,331,413,0 
+../drive/MyDrive/images_v2/19_r.jpg 0,23,215,215,0 
+../drive/MyDrive/images_v2/20_r.jpg 0,300,416,416,0 
+../drive/MyDrive/images_v2/21_r.jpg 95,309,347,416,0 
+../drive/MyDrive/images_v2/22_r.jpg 206,0,416,117,0 206,221,303,326,0 
+../drive/MyDrive/images_v2/23_r.jpg 0,0,343,416,0 
+../drive/MyDrive/images_v2/24_r.jpg 110,71,207,86,0 116,214,245,226,0 0,274,399,361,0 
+../drive/MyDrive/images_v2/25_r.jpg 48,18,183,37,0 
+../drive/MyDrive/images_v2/26_r.jpg 38,187,388,232,0 79,253,330,305,0 
+../drive/MyDrive/images_v2/27_r.jpg 0,0,391,113,0 
+../drive/MyDrive/images_v2/28_r.jpg 0,285,416,416,0 
+../drive/MyDrive/images_v2/29_r.jpg 14,18,389,134,0 134,286,289,319,0 
+../drive/MyDrive/images_v2/30_r.jpg 4,228,404,307,0 
+../drive/MyDrive/images_v2/31_r.jpg 297,0,416,119,0 45,326,371,416,0 
+../drive/MyDrive/images_v2/32_r.jpg 200,27,341,160,0 366,259,416,355,0 
+../drive/MyDrive/images_v2/33_r.jpg 0,0,409,114,0 
+../drive/MyDrive/images_v2/34_r.jpg 0,116,316,199,0 1,212,377,237,0 80,334,400,379,0 
+../drive/MyDrive/images_v2/35_r.jpg 0,0,168,131,0 87,300,339,416,0 
+../drive/MyDrive/images_v2/36_r.jpg 24,291,210,312,0 
+../drive/MyDrive/images_v2/37_r.jpg 135,245,284,344,0 138,347,281,405,0 
+../drive/MyDrive/images_v2/38_r.jpg 98,243,315,409,0 
+../drive/MyDrive/images_v2/39_r.jpg 10,122,398,174,0 
+../drive/MyDrive/images_v2/40_r.jpg 0,76,415,119,0 0,123,416,214,0 0,218,391,295,0 
+../drive/MyDrive/images_v2/41_r.jpg 2,9,416,155,0 
+../drive/MyDrive/images_v2/42_r.jpg 23,266,382,387,0 
+../drive/MyDrive/images_v2/43_r.jpg 62,306,354,416,0 
+../drive/MyDrive/images_v2/44_r.jpg 24,300,384,410,0 
+../drive/MyDrive/images_v2/45_r.jpg 149,19,318,55,0 0,30,152,74,0 1,222,273,278,0 
+../drive/MyDrive/images_v2/46_r.jpg 332,0,416,36,0 
+../drive/MyDrive/images_v2/47_r.jpg 11,165,378,320,0 
+../drive/MyDrive/images_v2/48_r.jpg 13,6,406,90,0 0,253,134,318,0 12,335,350,405,0 
+../drive/MyDrive/images_v2/49_r.jpg 55,58,266,86,0 
+../drive/MyDrive/images_v2/50_r.jpg 16,333,372,416,0 
+../drive/MyDrive/images_v2/51_r.jpg 16,243,411,395,0 
+../drive/MyDrive/images_v2/52_r.jpg 2,8,394,80,0 
+../drive/MyDrive/images_v2/53_r.jpg 24,78,366,135,0 185,140,332,173,0 46,269,355,328,0 
+../drive/MyDrive/images_v2/54_r.jpg 44,51,361,80,0 12,332,104,357,0 
+../drive/MyDrive/images_v2/55_r.jpg 0,19,141,48,0 236,76,392,105,0 
+../drive/MyDrive/images_v2/56_r.jpg 52,217,374,407,0 
+../drive/MyDrive/images_v2/57_r.jpg 0,1,416,152,0 0,313,416,416,0 
+../drive/MyDrive/images_v2/58_r.jpg 0,1,416,152,0 0,313,416,416,0 
+../drive/MyDrive/images_v2/59_r.jpg 12,300,232,414,0 
+../drive/MyDrive/images_v2/60_r.jpg 3,220,284,327,0 
+../drive/MyDrive/images_v2/61_r.jpg 0,239,196,286,0 
+../drive/MyDrive/images_v2/62_r.jpg 5,43,393,120,0 
+../drive/MyDrive/images_v2/63_r.jpg 8,7,411,125,0 0,307,400,385,0 
+../drive/MyDrive/images_v2/64_r.jpg 62,32,416,167,0 65,222,416,383,0 
+../drive/MyDrive/images_v2/65_r.jpg 23,18,354,163,0 
+../drive/MyDrive/images_v2/66_r.jpg 46,333,362,416,0 
+../drive/MyDrive/images_v2/67_r.jpg 0,2,297,38,0 0,42,401,97,0 
+../drive/MyDrive/images_v2/68_r.jpg 41,150,357,212,0 0,361,416,416,0 
+../drive/MyDrive/images_v2/69_r.jpg 0,0,408,105,0 
+../drive/MyDrive/images_v2/70_r.jpg 0,28,386,137,0 
+../drive/MyDrive/images_v2/71_r.jpg 109,200,296,291,0 
+../drive/MyDrive/images_v2/72_r.jpg 76,299,416,416,0 
+../drive/MyDrive/images_v2/73_r.jpg 25,301,396,386,0 
+../drive/MyDrive/images_v2/74_r.jpg 18,292,391,415,0 
+../drive/MyDrive/images_v2/75_r.jpg 0,32,416,89,0 
+../drive/MyDrive/images_v2/76_r.jpg 0,10,416,115,0 
+../drive/MyDrive/images_v2/77_r.jpg 0,118,416,271,0 
+../drive/MyDrive/images_v2/78_r.jpg 0,245,416,416,0 
+../drive/MyDrive/images_v2/79_r.jpg 7,222,381,357,0 
+../drive/MyDrive/images_v2/80_r.jpg 166,30,416,212,0 
+../drive/MyDrive/images_v2/81_r.jpg 6,319,388,416,0 
+../drive/MyDrive/images_v2/82_r.jpg 0,0,416,53,0 
+../drive/MyDrive/images_v2/83_r.jpg 0,0,403,56,0 
+../drive/MyDrive/images_v2/84_r.jpg 77,222,358,416,0 
+../drive/MyDrive/images_v2/85_r.jpg 13,144,388,299,0 
+../drive/MyDrive/images_v2/86_r.jpg 51,342,367,416,0 
+../drive/MyDrive/images_v2/87_r.jpg 101,271,370,416,0 
+../drive/MyDrive/images_v2/88_r.jpg 13,0,351,105,0 0,109,402,183,0 
+../drive/MyDrive/images_v2/89_r.jpg 0,0,416,210,0 0,276,416,416,0 
+../drive/MyDrive/images_v2/90_r.jpg 1,2,148,37,0 97,28,404,90,0 0,93,248,125,0 0,352,125,416,0 
+../drive/MyDrive/images_v2/91_r.jpg 10,42,400,123,0 25,266,402,365,0 
+../drive/MyDrive/images_v2/92_r.jpg 36,198,376,341,0 
+../drive/MyDrive/images_v2/93_r.jpg 0,283,397,416,0 
+../drive/MyDrive/images_v2/94_r.jpg 5,274,404,412,0 

@@ -16,16 +16,22 @@ from PIL import Image, ImageFont, ImageDraw
 from yolo3.model import yolo_eval, yolo_body, tiny_yolo_body
 from yolo3.utils import letterbox_image
 import os
-from keras.utils import multi_gpu_model
+from tensorflow.python.keras.utils.multi_gpu_utils import multi_gpu_model
+
+from tensorflow.python.framework.ops import disable_eager_execution
+disable_eager_execution()
 
 class YOLO(object):
     _defaults = {
-        "model_path": 'model_data/yolo.h5',
+        # "model_path": 'model_data/yolo.h5',
+        "model_path": 'model_data/trained_weights_final_agm.h5',
         "anchors_path": 'model_data/yolo_anchors.txt',
-        "classes_path": 'model_data/coco_classes.txt',
-        "score" : 0.3,
-        "iou" : 0.45,
+        # "classes_path": 'model_data/coco_classes.txt',
+        "classes_path": 'model_data/text_classes.txt',
+        "score" : 0.6,
+        "iou" : 0.5,
         "model_image_size" : (416, 416),
+        #"model_image_size" : (512, 512),
         "gpu_num" : 1,
     }
 
@@ -164,7 +170,7 @@ class YOLO(object):
 
         end = timer()
         print(end - start)
-        return image
+        return image, out_boxes, out_scores, out_classes   # cambio aqui
 
     def close_session(self):
         self.sess.close()
