@@ -1,0 +1,1 @@
+python yolo_video.py --model model_data/trained_weights_final_agm.h5 --classes model_data/text_classes.txt --image

@@ -27,6 +27,7 @@ def detect_text(yolo, dir_path = BASE_DETECT_DIR):
     file_list = get_image_dir(dir_path)
 
     for path in file_list:
+        print(dir_path + path)
         # abrimos la imagen
         img = Image.open(dir_path + path)
         # la pasamos a YOLO para que detecte las cajas de texto
@@ -36,7 +37,7 @@ def detect_text(yolo, dir_path = BASE_DETECT_DIR):
         r_image.save(BASE_SAVE_DIR + path)
 
         # guardamos el archivo con las coordenadas de las cajas
-        with open('bbox_file.txt', 'a') as f:
+        with open('bbox_file_' + path[:-4] + '.txt', 'a') as f:
             for i in range(0,len(out_boxes)):
                 top, left, bottom, right = out_boxes[i]
                 top = max(0, np.floor(top + 0.5).astype('int32'))
