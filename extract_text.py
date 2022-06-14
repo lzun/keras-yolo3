@@ -29,13 +29,13 @@ def main(dir_path = BASE_IMAGE_DIR):
 		img = cv2.imread(dir_path + path)
 
 		# se crea un directorio nuevo para almacenar las nuevas imagenes con el texto
-		os.mkdir(os.path.join(BASE_SUBIMAGE_DIR + 'canelo-caption'+ path[:-4]))
+		os.mkdir(os.path.join(BASE_SUBIMAGE_DIR + 'canelo_caption_'+ path[:-4]))
 
 		# se carga el archivo de texto con las coordenadas
 		with open(BBOX_BASE_DIR + 'bbox_file_' + path[:-4] + '.txt', 'r') as bbox_file:
 			img_counter = 1
 			# nos cambiamos al nuevo directorio creado anteriormente
-			os.chdir(os.path.join(BASE_SUBIMAGE_DIR + 'canelo-caption'+ path[:-4]))
+			os.chdir(os.path.join(BASE_SUBIMAGE_DIR + 'canelo_caption_'+ path[:-4]))
 			# iteramos sobre cada caja detectada
 			for line in bbox_file:
 				coords = line.split(',')
