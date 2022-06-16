@@ -6,7 +6,7 @@ from PIL import Image
 import os
 import numpy as np
 
-BASE_DETECT_DIR = 'images/'
+BASE_DETECT_DIR = 'images_processed/'
 BASE_SAVE_DIR = 'box_images/'
 
 def get_image_dir(folder_dir, file_type = 'jpg'):

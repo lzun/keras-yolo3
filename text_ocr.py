@@ -1,6 +1,8 @@
 import pytesseract
+import keras_ocr
 from PIL import Image, ImageOps
 import os
+import matplotlib.pyplot as plt
 
 BASE_DIR = '/Users/luisnzunigamorales/Documents/GitHub/keras-yolo3/'
 BASE_SUBIMAGE_DIR = '/Users/luisnzunigamorales/Documents/GitHub/keras-yolo3/subimages/'
@@ -19,10 +21,58 @@ def get_image_dir(folder_dir, file_type = 'jpg'):
 
     return file_list
 
+def keras_test():
+    # https://colab.research.google.com/github/mrm8488/shared_colab_notebooks/blob/master/keras_ocr_custom.ipynb#scrollTo=-OQIMmIp-uwn
+    
+    custom_images = []
+
+    pipeline = keras_ocr.pipeline.Pipeline()
+    
+    for filename in os.listdir('ocr_test'):
+        print(os.path.join(W_BASE_DIR, filename))
+        custom_images.append(os.path.join(W_BASE_DIR+'ocr_test\\', filename))
+
+    images = [keras_ocr.tools.read(path) for path in custom_images]
+
+    predictions = pipeline.recognize(images)
+
+    # fig, axs = plt.subplots(nrows=len(images), figsize=(10, 10))
+    # if(len(custom_images) == 1):
+    #     for image, prediction in zip(images, predictions):
+    #         keras_ocr.tools.drawAnnotations(image=image, predictions=prediction, ax=axs)
+    # else:
+    #     for ax, image, prediction in zip(axs, images, predictions):
+    #         keras_ocr.tools.drawAnnotations(image=image, predictions=prediction, ax=ax)
+
+    # plt.show()
+    line = []
+
+    for word, array in predictions[0]:
+        line.append((array, word+' '))
+    print(keras_ocr.tools.combine_line(line))
+
+    # with open('results.txt', 'a+') as f:
+    #     for idx, prediction in enumerate(predictions):
+    #         if(idx != 0):
+    #             print("\n")
+    #             f.write("\n\n")
+    #         print("Results for the file: " + os.path.basename(custom_images[idx]))
+    #         f.write("Results for the file: " + os.path.basename(custom_images[idx]) + ":\n\n")
+    #         for word, array in prediction:
+    #             if word == "\n":
+    #                 print("\n")
+    #                 f.write("\n")
+    #             else:
+    #                 print(word,  end = ' ')
+    #                 f.write(word + " ")
+
 def text_from_image(img_file, lang = 'spa'):
 
     # extrae el texto de la imagen con el OCR Tesseract
-    return pytesseract.image_to_string(ImageOps.grayscale(Image.open(img_file)), lang=lang)
+    # return pytesseract.image_to_string(Image.open(img_file), lang=lang)
+    # Each list of predictions in prediction_groups is a list of
+    # (word, box) tuples.
+    prediction_groups = pipeline.recognize(images)
 
 def main(dir_path = W_BASE_SUBIMAGE_DIR):
 
@@ -42,4 +92,4 @@ def main(dir_path = W_BASE_SUBIMAGE_DIR):
             pass
 
 if __name__ == '__main__':
-    main()
+    keras_test()

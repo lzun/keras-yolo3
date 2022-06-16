@@ -2,7 +2,7 @@ import cv2
 import os
 
 BBOX_BASE_DIR = 'bbox_files_txt/'
-BASE_IMAGE_DIR = 'images/'
+BASE_IMAGE_DIR = 'images_processed/'
 BASE_DIR = '/Users/luisnzunigamorales/Documents/GitHub/keras-yolo3/'
 BASE_SUBIMAGE_DIR = '/Users/luisnzunigamorales/Documents/GitHub/keras-yolo3/subimages/'
 W_BASE_DIR = 'C:\\Users\\green\\Documents\\GitHub\\keras-yolo3\\'
@@ -35,7 +35,7 @@ def main(dir_path = BASE_IMAGE_DIR):
 		os.mkdir(os.path.join(W_BASE_SUBIMAGE_DIR + 'canelo_caption_'+ path[:-4]))
 
 		# se carga el archivo de texto con las coordenadas
-		with open(BBOX_BASE_DIR + 'bbox_file_' + path[:-4] + '.txt', 'r') as bbox_file:
+		with open(BBOX_BASE_DIR + 'bbox_file_' + path[:-5] + 'r.txt', 'r') as bbox_file: # quitar 'r' y path[:-4]
 			img_counter = 1
 			# nos cambiamos al nuevo directorio creado anteriormente
 			os.chdir(os.path.join(W_BASE_SUBIMAGE_DIR + 'canelo_caption_'+ path[:-4]))
