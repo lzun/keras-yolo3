@@ -21,50 +21,24 @@ def get_image_dir(folder_dir, file_type = 'jpg'):
 
     return file_list
 
-def keras_test():
+def keras_test(path):
     # https://colab.research.google.com/github/mrm8488/shared_colab_notebooks/blob/master/keras_ocr_custom.ipynb#scrollTo=-OQIMmIp-uwn
-    
-    custom_images = []
 
+    # iniciamos el pipeline para el OCR
     pipeline = keras_ocr.pipeline.Pipeline()
     
-    for filename in os.listdir('ocr_test'):
-        print(os.path.join(W_BASE_DIR, filename))
-        custom_images.append(os.path.join(W_BASE_DIR+'ocr_test\\', filename))
-
-    images = [keras_ocr.tools.read(path) for path in custom_images]
-
-    predictions = pipeline.recognize(images)
-
-    # fig, axs = plt.subplots(nrows=len(images), figsize=(10, 10))
-    # if(len(custom_images) == 1):
-    #     for image, prediction in zip(images, predictions):
-    #         keras_ocr.tools.drawAnnotations(image=image, predictions=prediction, ax=axs)
-    # else:
-    #     for ax, image, prediction in zip(axs, images, predictions):
-    #         keras_ocr.tools.drawAnnotations(image=image, predictions=prediction, ax=ax)
-
-    # plt.show()
+    # realizamos la prediccion con el motor
+    predictions = pipeline.recognize([keras_ocr.tools.read(path)])
+    print(predictions)
+    # intentamos darle sentido al texto
     line = []
 
     for word, array in predictions[0]:
         line.append((array, word+' '))
+
     print(keras_ocr.tools.combine_line(line))
 
-    # with open('results.txt', 'a+') as f:
-    #     for idx, prediction in enumerate(predictions):
-    #         if(idx != 0):
-    #             print("\n")
-    #             f.write("\n\n")
-    #         print("Results for the file: " + os.path.basename(custom_images[idx]))
-    #         f.write("Results for the file: " + os.path.basename(custom_images[idx]) + ":\n\n")
-    #         for word, array in prediction:
-    #             if word == "\n":
-    #                 print("\n")
-    #                 f.write("\n")
-    #             else:
-    #                 print(word,  end = ' ')
-    #                 f.write(word + " ")
+    return keras_ocr.tools.combine_line(line)
 
 def text_from_image(img_file, lang = 'spa'):
 
@@ -76,20 +50,34 @@ def text_from_image(img_file, lang = 'spa'):
 
 def main(dir_path = W_BASE_SUBIMAGE_DIR):
 
+    # iniciamos el pipeline para el OCR
+    pipeline = keras_ocr.pipeline.Pipeline()
+
     # iteramos sobre las carpetas de la dirección base
     for filename in os.listdir(dir_path):
         f = os.path.join(dir_path, filename)
+        # si el path es un directorio
         if (os.path.isdir(f)):
             # get file list of image paths
             file_list = get_image_dir(f)
             for path in file_list:
-                text = text_from_image(os.path.join(f, path))
-                os.chdir(f)
-                with open(path[:-4]+'.txt','w') as wfile:
-                    wfile.write(text)
+                print(f+path)
+                # realizamos la prediccion con el motor
+                predictions = pipeline.recognize([keras_ocr.tools.read(os.path.join(f, path))])
+                # line = []
+                # for word, array in predictions[0]:
+                #     line.append((array, word+' '))
+                try:  
+                    text = keras_ocr.tools.combine_line([(array, word+' ') for word, array in predictions[0]])
+                    print(text[1])
+                    os.chdir(f)
+                    with open(path[:-4]+'.txt','w') as wfile:
+                        wfile.write(text[1])
+                except:
+                    pass
                 os.chdir(W_BASE_SUBIMAGE_DIR)
         else:
             pass
 
 if __name__ == '__main__':
-    keras_test()
+    main()
